@@ -2,7 +2,7 @@
 
 <p>
   Um sistema simples de console desenvolvido em Java para cadastrar e gerenciar dois tipos de animais: Lobos e Leões.
-  Apesar da simplicidade da interface, o projeto doi estruturado para demonstrar conhecimento em POO, separação de responsabilidades e boa organização de código.
+  Apesar da simplicidade da interface, o projeto foi estruturado para demonstrar conhecimento em POO, separação de responsabilidades e boa organização de código.
 </p>
 
 ### 🚀 Funcionalidades
@@ -30,6 +30,7 @@ Isso força cada animal específico a definir seu próprio comportamento.
 As classes:
 - LoboModel
 - LeaoModel
+
 herdam de <strong>Animal</strong>
 
 ### ✔️ Encapsulamento
@@ -40,6 +41,7 @@ Isso impede acesso direto aos dados e garante integridade.
 A lista em <code>AnimalService</code> armazena objetos do tipo <code>Animal</code>, mas cada elemento pode ser um:
 - LoboModel
 - LeaoModel
+
 Quando o programa exibe os animais ou executa <code>fazerSom()</code>, o método correto é chamado de forma dinâmica, sem precisar saber o tipo exato em tempo de compilação.
 
 ### ✔️ Separação de Responsabilidades (Single Responsability Principle)
@@ -49,6 +51,7 @@ Quando o programa exibe os animais ou executa <code>fazerSom()</code>, o método
   > Armazena e gerencia a lista de animais
 - <code>model/</code> <br>
   > Só define estrutura e comportamento dos objetos do domínio
+
 Nada de lógica interna misturada com display de console.
 
 ### Estrutura do Projeto
